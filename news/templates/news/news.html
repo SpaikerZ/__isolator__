@@ -7,18 +7,19 @@
   {% block body %}
   <h1>hi</h1>
 
-  <button><a href="page">page</a></button>
-  <button><a href="admin">admin</a></button>
+  <button><a href="./../page">page</a></button>
+  <button><a href="./../admin">admin</a></button>
+ 
+  {% for news in object_list %}
+  <h1>
+        <a href='/news/{{post.id}}'>{{post.title}}</a>
+        {{post.post}}
+        {{post.date}}
+  </h1>
+  {% endfor %}
+
+      <h1>Block end</h1> 
+
   {% endblock %}
 
-  {% block footer %}
-      
-      {% for post in object_list %}
-            <h1>
-                  {{post.title}}
-                  {{post.post}}
-                  {{post.date}}
-            </h1>
-      {% endfor %}
-      
-  {% endblock %}
+  

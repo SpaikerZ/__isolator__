@@ -21,6 +21,6 @@ from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^page', include('Page.urls')),
-    
     url(r'^news', include('news.urls')),
+    url(r'^book', include('book.urls')),
 ]
