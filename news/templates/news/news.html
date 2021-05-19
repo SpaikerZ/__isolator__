@@ -1,0 +1,24 @@
+{% extends 'news/wrapper.html' %}
+  {% block title %}
+        Страница Новостей
+  {% endblock %}
+
+
+  {% block body %}
+  <h1>hi</h1>
+
+  <button><a href="page">page</a></button>
+  <button><a href="admin">admin</a></button>
+  {% endblock %}
+
+  {% block footer %}
+      
+      {% for post in object_list %}
+            <h1>
+                  {{post.title}}
+                  {{post.post}}
+                  {{post.date}}
+            </h1>
+      {% endfor %}
+      
+  {% endblock %}

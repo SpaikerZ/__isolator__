@@ -1,0 +1,31 @@
+{% extends 'page/wrapper.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block body %}
+<h2>Hello, write login </h2>
+<h2>and password</h2>
+
+<input type="text" name="username" placeholder="Username">
+<br />
+<br />
+<input type="password" name="password" placeholder="password">
+<br />
+<br />
+<input type="submit" value="Готово">
+<br />
+<br />
+<button><a href="news">news</a></button>
+<button><a href="admin">admin</a></button>
+<br />
+<br />
+<input type="text" name="typenews" placeholder="Type of news">
+<br />
+<br />
+<input type="text" name="titlenews" placeholder="Title news">
+<br />
+<br />
+<input type="text" name="postnews" placeholder="postnews">
+{% endblock %}
