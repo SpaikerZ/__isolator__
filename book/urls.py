@@ -12,5 +12,5 @@ from . import views
 urlpatterns = [
     
     url(r'^', views.index),
-    
+    url(r'^books/$', views.BookListView.as_view(), name='books'),
 ]
