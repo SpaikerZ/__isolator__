@@ -1,11 +1,4 @@
 from django.contrib import admin
+from Page.models import Person
 
-"""
-from .models import Post, Comment
-
-class CommentAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'post', 'created', 'active')
-    list_filter = ('active', 'created', 'updated')
-    search_fields = ('name', 'email', 'body')
-admin.site.register(Comment, CommentAdmin)
-"""
+admin.site.register(Person)
