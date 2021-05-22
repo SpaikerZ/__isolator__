@@ -1,5 +1,5 @@
 
-import dj-database-url
+#import dj_database_url
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -19,8 +19,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 ALLOWED_HOSTS = ['*']
 
-db_from_env = dj-database-url.config()
-DATABASE['DEFAULT'].update(db_from_env)
+#db_from_env = dj-database-url.config()
+#DATABASE['DEFAULT'].update(db_from_env)
 # Application definition
 
 INSTALLED_APPS = [
